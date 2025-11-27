@@ -1,87 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trayectoria - Cometa 3I/ATLAS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1532793218979-f3365c284b32?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZXNwYWNpbyUyMG5lZ3JvfGVufDB8...');
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: #000;
+            color: #ffffff;
+        }
+        .card-uniform {
+            /* Estilo unificado para todas las tarjetas */
+            background-color: rgba(18, 18, 18, 0.9);
+            border: 2px solid var(--bs-info); /* Borde Cian uniforme */
+        }
+    </style>
 </head>
-<body style="background-image: url('https://images.unsplash.com/photo-1532793218979-f3365c284b32?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZXNwYWNpbyUyMG5lZ3JvfGVufDB8fDB8fHww');"></body>
+<body class="text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold text-warning" href="cometa.html">3I/ATLAS - Portal</a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link text-info fw-bold" href="quees.html">Características</a> 
+                    <a class="nav-link text-success fw-bold active" aria-current="page" href="responsive.html">Trayectoria Orbital</a>
+                    <a class="nav-link text-primary fw-bold" href="acordeon.html">Composición y Galería</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="responsive.html">3I Atlas</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="quees.html">¿Que es el 3I Atlas?</a>
-        <a class="nav-link" href="acordeon.html">Serie de imagenes</a>
-      </div>
+    <div class="container my-5">
+        <header class="text-center p-4 bg-black bg-opacity-75 rounded-3 mb-5 border border-success">
+            <h1 class="display-4 fw-bolder text-success">Mecánica Orbital del Viajero Interestelar</h1>
+            <p class="lead">Análisis profundo de la trayectoria y el paso seguro del cometa.</p>
+        </header>
+
+        <div class="row g-4 mb-5">
+            
+            <div class="col-md-6">
+                <div class="card card-uniform text-light p-4 shadow-lg h-100">
+                    <h4 class="fw-bold text-info">La Geometría de la Órbita Hiperbólica (e > 1.0)</h4>
+                    <p>La órbita del 3I/ATLAS es la prueba fundamental de su origen interestelar. Se describe como hiperbólica, una curva abierta con una **excentricidad orbital** (e) matemáticamente superior a **1.0**. Este valor es el marcador que confirma que el objeto no está ligado gravitacionalmente al Sol y que su paso por nuestro sistema es temporal. A diferencia de los objetos de nuestro Sistema Solar que orbitan en elipses, el cometa utiliza la gravedad del Sol en un efecto de "tirachinas" para cambiar de dirección y acelerar fuera de la heliosfera.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="card card-uniform text-light p-4 shadow-lg h-100">
+                    <h4 class="fw-bold text-info">Datos Clave de Aproximación y Perihelio</h4>
+                    <p>El punto de máxima aproximación al Sol, o **perihelio**, fue un momento crucial para su observación. Las re-evaluaciones orbitales precisaron que la distancia mínima de aproximación al Sol fue significativamente mayor que la órbita de la Tierra. Esta distancia, junto con su ángulo de aproximación, es la razón principal de que los científicos confirmaran la total seguridad de nuestro planeta, desestimando cualquier teoría de impacto. Su paso es un evento de una sola vez.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <div class="col-12">
+                <div class="card bg-black bg-opacity-75 text-light p-4 shadow-lg border-warning h-100">
+                    <h4 class="fw-bold text-warning mb-3">El Contexto Galáctico: Origen y Destino</h4>
+                    <p>Aunque es imposible precisar exactamente de qué sistema estelar fue expulsado el 3I/ATLAS, los astrónomos han podido rastrear su posible dirección de procedencia hasta una región específica en el plano galáctico. Una vez que el cometa abandone la influencia dominante de nuestro Sol, continuará su viaje a través del medio interestelar a una velocidad constante, navegando por la galaxia hasta que sea potencialmente capturado por el campo gravitacional de otro sistema estelar en millones de años. Su estudio nos da información sobre la densidad de estos objetos en nuestra galaxia.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card bg-danger bg-opacity-75 text-white shadow-lg border-0 border-top border-danger border-5">
+            <div class="card-body p-5">
+                <h4 class="fw-bolder mb-3 text-warning">⚠️ Aclaración Científica: Seguridad Plena y Cero Riesgo</h4>
+                <p class="lead">Es fundamental disipar cualquier preocupación. Las simulaciones orbitales, corroboradas por la NASA y la Agencia Espacial Europea, han demostrado consistentemente que la trayectoria del 3I/ATLAS **no se cruza peligrosamente** con la órbita de la Tierra, manteniéndose a millones de kilómetros de distancia.</p>
+                <p class="mb-0">El cometa mantendrá una distancia segura y continuará su viaje. La investigación se centra puramente en la ciencia, utilizando este visitante para entender mejor la formación de planetas y cuerpos celestes en sistemas solares ajenos al nuestro.</p>
+            </div>
+        </div>
+
     </div>
-  </div>
-</nav>
-<br>
-<br>
-<p style="color: aliceblue;">  El 3I/ATLAS representa una de las oportunidades más fascinantes para la comunidad científica internacional, atrayendo una atención sin precedentes en todo el mundo a medida que viaja a través de nuestro sistema solar. 
-  <br>Este viajero cósmico, originario de otro sistema estelar, ofrece una ventana única para entender la diversidad de los objetos que pueblan nuestra galaxia y las condiciones en que se formaron planetas más allá del nuestro. 
-  <br> Su llegada plantea una serie de preguntas científicas que van desde la composición de estos materiales hasta la forma en que interactúan con la gravedad solar. 
-  <br> La ciencia española, con su participación en la observación y análisis de este evento cósmico, está contribuyendo activamente a la comprensión global de este suceso. 
-<br> Este cuerpo celeste se ha convertido en un objetivo prioritario para la astronomía, ya que su velocidad y trayectoria únicas lo distinguen de los visitantes habituales de nuestro sistema solar.
-<br> El estudio detallado de su comportamiento y composición permitirá a los científicos obtener información valiosa sobre los materiales que conforman otros sistemas planetarios, y determinar si estos comparten similitudes o diferencias con los que conocemos. 
-<br>La ciencia busca así expandir su conocimiento sobre el universo y el lugar que ocupamos en él. 
-</p>
 
-
-<br>
-<br>
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        ¿Por que es importante investigar el 3I Atlas?
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <br>
-      Investigar el 3I/ATLAS es importante porque proporciona información valiosa sobre el comportamiento de los cometas interestelares y su posible influencia en el sistema solar. La investigación ayuda a entender mejor la naturaleza de estos cuerpos celestes y su interacción con el sistema solar, lo que puede tener implicaciones para la astrofísica y la astronomía en general. Además, la investigación puede ofrecer nuevas perspectivas sobre la evolución y el funcionamiento de los cometas y su posible conexión con fenómenos más grandes en el universo.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        ¿Va impactar la tierra?
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <br>
-        El cometa 3I/ATLAS ha generado preocupación debido a su posible impacto con la Tierra. Según Elon Musk, si impactara, podría causar daños continentales, aunque no se ha confirmado oficialmente que represente un riesgo para la Tierra. El cometa se encuentra en la constelación de Virgo y su trayectoria hiperbólica lo hace extremadamente rápido, alcanzando velocidades de hasta 130,000 millas por hora.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        ¿Es nesecario sobrepreocuparse?
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <br>
-      No es necesario sobrepreocuparse por el 3I/ATLAS. Aunque ha generado especulaciones y preocupaciones debido a su comportamiento inusual y la falta de cola visible, la comunidad científica ha llegado a conclusiones que indican que no representa un peligro para la Tierra. La NASA y la Agencia Espacial Europea han mejorado la predicción de su trayectoria, y se espera que el cometa continúe en una órbita hiperbólica, escapando de la gravedad del Sol y no volviendo a regresar al espacio interestelar.
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-  
+    <footer class="bg-dark text-white text-center py-4 border-top border-secondary mt-5">
+        <p class="mb-1">© 2024 Proyecto Cometa 3I/ATLAS</p>
+        <p class="mb-0">Análisis de Trayectoria Orbital</p>
+    </footer>
 </body>
 </html>
